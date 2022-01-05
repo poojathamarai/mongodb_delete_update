@@ -139,3 +139,17 @@ movies
         "trailer" : "https://www.youtube.com/embed/ue80QwXMRHg",
         "id" : "108"
 }
+_____________________________________________________________________________________________________________________________________________________________________
+
+db.movies.updateOne({name:"Jai Bhim"},{$set:{rating:9}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+db.movies.find({name:"Jai Bhim"}).pretty()
+{
+        "_id" : ObjectId("61d51da63eeedfef432f6dfb"),
+        "id" : "103",
+        "name" : "Jai Bhim",
+        "poster" : "https://m.media-amazon.com/images/M/MV5BY2Y5ZWMwZDgtZDQxYy00Mjk0LThhY2YtMmU1MTRmMjVhMjRiXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg",
+        "summary" : "A tribal woman and a righteous lawyer battle in court to unravel the mystery around the disappearance of her husband, who was picked up the police on a false case",
+        "rating" : 9,
+        "trailer" : "https://www.youtube.com/embed/nnXpbTFrqXA"
+}
